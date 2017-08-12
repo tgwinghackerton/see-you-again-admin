@@ -1,10 +1,12 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
-    entry:  [
+    entry: [
         './src/index.js',
         'webpack-dev-server/client?http://0.0.0.0:3001',
-        'webpack/hot/only-dev-server'
+        'webpack/hot/only-dev-server',
+        './src/style.css'
     ],
 
     output: {
@@ -32,12 +34,16 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js$/,
-                loaders: ['react-hot-loader', 'babel-loader?' + JSON.stringify({
+                test: [/\.js$/],
+                loaders: ['babel-loader?' + JSON.stringify({
                     cacheDirectory: true,
                     presets: ['es2015', 'react']
                 })],
                 exclude: /node_modules/,
+            },
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
             }
         ]
     }

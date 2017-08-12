@@ -1,5 +1,7 @@
+var path = require('path');
+
 module.exports = {
-    entry: './src/index.js',
+    entry: ['./src/index.js', './src/style.css'],
 
     output: {
         path: __dirname + '/public',
@@ -9,13 +11,17 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js$/,
+                test: [/\.js$/],
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 query: {
                     cacheDirectory: true,
                     presets: ['es2015', 'react']
                 }
+            },
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
             }
         ]
     }

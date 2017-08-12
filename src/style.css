@@ -1,0 +1,30 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.leftCardList {
+    width: 30%;
+    position: absolute;
+    top: 57px;
+    bottom: 0;
+    z-index: -1;
+    overflow: scroll;
+    border-right: 1px solid #d2d2d2;
+}
+
+.rightContents {
+    position: absolute;
+    left: 30%;
+    top: 60px;
+    overflow: scroll;
+    margin: 10px;
+}
+
+@media (max-width:600px) {
+    .leftCardList {
+        top: 49px;
+    }
+    .rightContents{
+        top: 52px;
+    }
+}
