@@ -25,11 +25,15 @@ class LeftCard extends React.Component {
                 <div>
                     <a href="#!" className={cardClassName}
                        onClick={this.onClick.bind(this)}>
+                        <div>{this.props.address}</div>
+                        <div>{this.props.age}</div>
+                        <div>{this.props.circumstanceOfOccurance}</div>
+                        <div>{this.props.etc}</div>
+                        <div>{this.props.gender}</div>
                         <div>{this.props.name}</div>
-                        <div>{this.props.image}</div>
-                        <div>{this.props.missingPlace}</div>
-                        <div>{this.props.character}</div>
-                        <div>{this.props.comment}</div>
+                        <div>{this.props.physicalCharacteristics}</div>
+                        <div>{this.props.timeOfMissing}</div>
+                        <div>{this.props.writerKey}</div>
                     </a>
                 </div>
             </div>

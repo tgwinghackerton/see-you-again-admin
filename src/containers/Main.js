@@ -1,67 +1,69 @@
 import React from 'react';
 import Header from "../components/Header";
 import LeftCard from "../components/LeftCard";
+import fb from '../components/firebase';
+
 
 class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             focusedIndex: 0,
-            tempData: [
-                {
-                    index: 0,
-                    name: "김", image: "http://i.imgur.com/iwMqYoA.jpg",
-                    missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                    comment: "꼭 찾아주세요!"
-                },
-                {
-                    index: 1,
-                    name: "성", image: "http://i.imgur.com/iwMqYoA.jpg",
-                    missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                    comment: "꼭 찾아주세요!"
-                },
-                {
-                    index: 2,
-                    name: "최", image: "http://i.imgur.com/iwMqYoA.jpg",
-                    missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                    comment: "꼭 찾아주세요!"
-                },
-                {
-                    index: 3,
-                    name: "조", image: "http://i.imgur.com/iwMqYoA.jpg",
-                    missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                    comment: "꼭 찾아주세요!"
-                },
-                {
-                    index: 4,
-                    name: "만", image: "http://i.imgur.com/iwMqYoA.jpg",
-                    missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                    comment: "꼭 찾아주세요!"
-                }
-            ]
+            mpiData: []
         }
     }
 
-    onCardClick(index){
+    componentWillMount() {
+        let messagesRef = fb.database().ref('mpi').orderByKey().limitToLast(100);
+        let i = 0;
+        messagesRef.on('value', snapshot => {
+            /* Update React state when message is added at Firebase Database */
+
+            let mpiData = Object.keys(snapshot.val()).map(function (key) {
+                let tempObj = snapshot.val()[key];
+                tempObj.key = key;
+                tempObj.index = i;
+                i++;
+                return tempObj;
+            });
+
+            this.setState({mpiData: mpiData});
+        })
+
+    }
+
+    onCardClick(index) {
         // console.log(index);
         this.setState({focusedIndex: index});
-        this.forceUpdate();
+        // this.forceUpdate();
     }
 
     setLeftCardListData() {
-        // console.log(this.state.focusedIndex);
+        console.log(this.state.mpiData);
+
+        if(this.state.mpiData.length === 0){
+            return <div></div>
+        }
+
         return (
-            this.state.tempData.map((man) =>
+            this.state.mpiData.map((man) =>
                 <LeftCard
                     onCardClick={this.onCardClick.bind(this)}
-                    key={man.index}
+                    key={man.key}
                     index={man.index}
                     isActive={man.index === this.state.focusedIndex}
+
+                    address={man.address}
+                    age={man.age}
+                    circumstanceOfOccurance={man.circumstanceOfOccurance}
+                    dressMarks={man.dressMarks}
+                    etc={man.etc}
+                    gender={man.gender}
                     name={man.name}
-                    image={man.image}
-                    missingPlace={man.missingPlace}
-                    character={man.character}
-                    comment={man.comment}/>)
+                    physicalCharacteristics={man.physicalCharacteristics}
+                    timeOfMissing={man.timeOfMissing}
+                    writerKey={man.writerKey}
+                />)
         )
     }
 
@@ -75,13 +77,21 @@ class Main extends React.Component {
     }
 
     renderRightContents() {
+        if(this.state.mpiData.length === 0){
+            return <div></div>
+        }
+
         return (
             <div>
-                <div>{this.state.tempData[this.state.focusedIndex].name}</div>
-                <div>{this.state.tempData[this.state.focusedIndex].image}</div>
-                <div>{this.state.tempData[this.state.focusedIndex].missingPlace}</div>
-                <div>{this.state.tempData[this.state.focusedIndex].character}</div>
-                <div>{this.state.tempData[this.state.focusedIndex].comment}</div>
+                <div>{this.state.mpiData[this.state.focusedIndex].address}</div>
+                <div>{this.state.mpiData[this.state.focusedIndex].age}</div>
+                <div>{this.state.mpiData[this.state.focusedIndex].circumstanceOfOccurance}</div>
+                <div>{this.state.mpiData[this.state.focusedIndex].etc}</div>
+                <div>{this.state.mpiData[this.state.focusedIndex].gender}</div>
+                <div>{this.state.mpiData[this.state.focusedIndex].name}</div>
+                <div>{this.state.mpiData[this.state.focusedIndex].physicalCharacteristics}</div>
+                <div>{this.state.mpiData[this.state.focusedIndex].timeOfMissing}</div>
+                <div>{this.state.mpiData[this.state.focusedIndex].writerKey}</div>
             </div>
         )
     }
