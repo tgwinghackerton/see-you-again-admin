@@ -2,8 +2,9 @@ body {
     background-color: #f2f2f2;
 }
 
+
 .leftCardList {
-    width: 30%;
+    width: 350px;
     position: absolute;
     top: 57px;
     bottom: 0;
@@ -12,12 +13,55 @@ body {
     border-right: 1px solid #d2d2d2;
 }
 
+.leftCardImage {
+    width: auto; height: auto;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.leftCardContents{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .rightContents {
     position: absolute;
-    left: 30%;
+    left: 360px;
     top: 60px;
+    right: 30px;
     overflow: scroll;
     margin: 10px;
+    padding-bottom: 60px;
+
+}
+
+.rightContentsTitle{
+    font-size: 11px;
+    color: slategray;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#headerLeft {
+    visibility: hidden;
+}
+
+.cardContentsBox{
+    display: inline-block;
+}
+
+@media (max-width:950px) {
+    .leftCardList {
+        visibility: hidden;
+    }
+    .rightContents {
+        left: 30px;
+    }
+    #headerLeft {
+        visibility: visible;
+    }
 }
 
 @media (max-width:600px) {

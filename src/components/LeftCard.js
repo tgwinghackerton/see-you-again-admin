@@ -10,7 +10,7 @@ class LeftCard extends React.Component {
     }
 
     onClick() {
-        this.props.onCardClick(this.props.index);
+        this.props.onCardClick(this.props.keyIndex);
     }
 
     render() {
@@ -20,20 +20,34 @@ class LeftCard extends React.Component {
             cardClassName = "collection-item grey-text text-darken-3 green lighten-4 active";
 
         }
+
+        let acceptText = "미승인";
+        let acceptColor = "#d61b1b";
+        if (this.props.accepted) {
+            acceptText = "승인됨";
+            acceptColor = "#4286f4";
+        }
+
         return (
             <div>
                 <div>
                     <a href="#!" className={cardClassName}
                        onClick={this.onClick.bind(this)}>
-                        <div>{this.props.address}</div>
-                        <div>{this.props.age}</div>
-                        <div>{this.props.circumstanceOfOccurance}</div>
-                        <div>{this.props.etc}</div>
-                        <div>{this.props.gender}</div>
-                        <div>{this.props.name}</div>
-                        <div>{this.props.physicalCharacteristics}</div>
-                        <div>{this.props.timeOfMissing}</div>
-                        <div>{this.props.writerKey}</div>
+                        <div className="leftCardContents">
+                            <img className="leftCardImage" src={this.props.imageUrl}/>
+                        </div>
+                        <div className="leftCardContents">
+
+                            <div style={{fontSize: 20, marginBottom: 10}}>{this.props.name} (<span>{this.props.age}
+                                세</span>, <span>{this.props.gender}</span>)
+                            </div>
+                            <div style={{color: "#515151", marginBottom: -4}}>{this.props.address}</div>
+                            <div style={{color: "#717171", fontSize: 10}}>{this.props.writerKey}님이 등록</div>
+                        </div>
+
+                        <div style={{color: acceptColor, textAlign: 'right', fontWeight:'bold'}}>
+                            {acceptText}
+                        </div>
                     </a>
                 </div>
             </div>
