@@ -109,12 +109,12 @@ class Main extends React.Component {
         return (
             <div>
                 {focusMan.accepted ?
-                    <div style={{position: "absolute", bottom: 10}}>
+                    <div style={{position: "fixed", bottom: 10}}>
                         <a onClick={this.onAccept.bind(this, focusMan.key, false)}
                            className="waves-effect waves-light red lighten-1 btn">취소하기</a>
                     </div>
                     :
-                    <div style={{position: "absolute", bottom: 10}}>
+                    <div style={{position: "fixed", bottom: 10}}>
                         <a onClick={this.onAccept.bind(this, focusMan.key, true)}
                            className="waves-effect waves-light green darken-1 btn">승인하기</a>
                     </div>}
