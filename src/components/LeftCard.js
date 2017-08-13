@@ -36,7 +36,7 @@ class LeftCard extends React.Component {
                         <div className="leftCardContents">
                             <img className="leftCardImage" src={this.props.imageUrl}/>
                         </div>
-                        <div className="leftCardContents">
+                        <div className="leftCardContents" id="leftCardText">
 
                             <div style={{fontSize: 20, marginBottom: 10}}>{this.props.name} (<span>{this.props.age}
                                 세</span>, <span>{this.props.gender}</span>)

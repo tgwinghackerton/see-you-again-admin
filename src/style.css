@@ -44,31 +44,30 @@ body {
     margin-bottom: 10px;
 }
 
-#headerLeft {
-    visibility: hidden;
-}
 
 .cardContentsBox{
     display: inline-block;
 }
 
-@media (max-width:950px) {
+@media (max-width: 900px){
     .leftCardList {
-        visibility: hidden;
+        width: 120px;
+    }
+    #leftCardText {
+        display: none;
     }
     .rightContents {
-        left: 30px;
-    }
-    #headerLeft {
-        visibility: visible;
+        left : 150px;
     }
 }
 
 @media (max-width:600px) {
     .leftCardList {
         top: 49px;
+
     }
     .rightContents{
         top: 52px;
     }
+
 }

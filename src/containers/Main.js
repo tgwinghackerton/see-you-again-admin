@@ -156,22 +156,10 @@ class Main extends React.Component {
         )
     }
 
-    onHeaderLeftClick(toggle){
-        if(toggle){ // 보이게
-            // console.log("clicked!");
-            document.querySelector('.leftCardList').style = 'visibility: visible; z-index: 999;';
-            document.querySelector('.rightContents').style = 'left: 360px;';
-        } else { // 안보이게
-            document.querySelector('.leftCardList').style = 'visibility: hidden; ;';
-            document.querySelector('.rightContents').style = 'left: 30px;';
-        }
-
-    }
-
     render() {
         return (
             <div>
-                <Header onHeaderLeftClick={this.onHeaderLeftClick}/>
+                <Header/>
 
                 <div className="leftCardList">
                     {this.renderLeftCardList()}
