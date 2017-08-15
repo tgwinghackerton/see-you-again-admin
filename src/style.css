@@ -4,7 +4,7 @@ body {
 
 
 .leftCardList {
-    width: 350px;
+    width: 380px;
     position: absolute;
     top: 57px;
     bottom: 0;
@@ -29,7 +29,7 @@ body {
 .rightContents {
     z-index : -1;
     position: absolute;
-    left: 360px;
+    left: 390px;
     top: 0;
     right: 30px;
     height: calc(100% - 120px);

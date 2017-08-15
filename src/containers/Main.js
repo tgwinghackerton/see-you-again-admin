@@ -2,7 +2,8 @@ import React from 'react';
 import Header from "../components/Header";
 import LeftCard from "../components/LeftCard";
 import fb from '../components/firebase';
-
+import axios from 'axios'
+import moment from 'moment'
 
 class Main extends React.Component {
     constructor(props) {
@@ -27,6 +28,7 @@ class Main extends React.Component {
                     tempThis.setState({focusedKey: tempObj.key});
                     check = true;
                 }
+
                 return tempObj;
             });
 
@@ -47,6 +49,7 @@ class Main extends React.Component {
 
         return (
             this.state.mpiData.map((man) =>
+
                 <LeftCard
                     onCardClick={this.onCardClick.bind(this)}
                     key={man.key}
@@ -65,7 +68,8 @@ class Main extends React.Component {
                     timeOfMissing={man.timeOfMissing}
                     writerKey={man.writerKey}
                     beforeUrl={man.beforeUrl}
-                />)
+                />
+            )
         )
     }
 
@@ -78,16 +82,60 @@ class Main extends React.Component {
         )
     }
 
-    onAccept(key, isThisAccept) {
+    testPredict(focusMan){
+        let manRef = fb.database().ref('mpi').child(focusMan.key);
+        // firebase update
+        manRef.update({"afterUrl": "http://blog.ebaykorea.com/wp-content/uploads/2016/01/0129_G%EB%A7%88%EC%BC%93_%EC%84%A4%ED%98%84_10.jpg"})
+    }
+
+    testCancel(focusMan){
+        let manRef = fb.database().ref('mpi').child(focusMan.key).child("afterUrl");
+        // firebase delete
+        manRef.remove();
+
+    }
+
+    onAccept(focusMan, isThisAccept) {
         let confirmMessage = "정말 승인하시겠습니까?";
         if (!isThisAccept) {
             confirmMessage = "정말 취소하시겠습니까?";
         }
 
         if (confirm(confirmMessage) === true) {
-            let manRef = fb.database().ref('mpi').child(key);
+            let manRef = fb.database().ref('mpi').child(focusMan.key);
             // firebase update
             manRef.update({"accepted": isThisAccept})
+        }
+
+        if(isThisAccept){
+
+            if(focusMan.gender==="남"){
+                focusMan.gender = "male"
+            } else {
+                focusMan.gender = "female"
+            }
+
+            let missingTime = moment.unix(focusMan.timeOfMissing/1000);
+            let currentTime = moment();
+
+            let diff = currentTime.diff(missingTime, 'years');
+            let currentAge = focusMan.age + diff;
+
+            axios.post('http://163.180.117.38:2525/predict', {
+                user_key: focusMan.key,
+                orig_image_url: focusMan.beforeUrl,
+                current_age: currentAge,
+                gender: focusMan.gender,
+                age: focusMan.age
+            }).then((response) => {
+                console.log(response);
+                let manRef = fb.database().ref('mpi').child(focusMan.key);
+                // firebase update
+                manRef.update({"afterUrl": response.data.afterUrl});
+
+            })
+        } else {
+            this.testCancel(focusMan)
         }
 
     }
@@ -110,12 +158,12 @@ class Main extends React.Component {
             <div>
                 {focusMan.accepted ?
                     <div style={{position: "fixed", bottom: 10}}>
-                        <a onClick={this.onAccept.bind(this, focusMan.key, false)}
+                        <a onClick={this.onAccept.bind(this, focusMan, false)}
                            className="waves-effect waves-light red lighten-1 btn">취소하기</a>
                     </div>
                     :
                     <div style={{position: "fixed", bottom: 10}}>
-                        <a onClick={this.onAccept.bind(this, focusMan.key, true)}
+                        <a onClick={this.onAccept.bind(this, focusMan, true)}
                            className="waves-effect waves-light green darken-1 btn">승인하기</a>
                     </div>}
 

@@ -11,6 +11,7 @@
     "express": "~4.15.2",
     "firebase": "^4.2.0",
     "jade": "~1.11.0",
+    "moment": "^2.18.1",
     "morgan": "~1.8.1",
     "react": "^15.6.1",
     "react-addons-update": "^15.6.0",
