@@ -34,7 +34,7 @@ class LeftCard extends React.Component {
                     <a href="#!" className={cardClassName}
                        onClick={this.onClick.bind(this)}>
                         <div className="leftCardContents">
-                            <img className="leftCardImage" src={this.props.imageUrl}/>
+                            <img className="leftCardImage" src={this.props.beforeUrl}/>
                         </div>
                         <div className="leftCardContents" id="leftCardText">
 

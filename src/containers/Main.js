@@ -64,7 +64,7 @@ class Main extends React.Component {
                     physicalCharacteristics={man.physicalCharacteristics}
                     timeOfMissing={man.timeOfMissing}
                     writerKey={man.writerKey}
-                    imageUrl={man.imageUrl}
+                    beforeUrl={man.beforeUrl}
                 />)
         )
     }
@@ -121,7 +121,7 @@ class Main extends React.Component {
 
 
                 <div className="rightContentsTitle">등록 사진</div>
-                <img src={focusMan.imageUrl} style={{
+                <img src={focusMan.beforeUrl} style={{
                     width: "auto", height: "auto",
                     maxWidth: 160,
                     maxHeight: 160

@@ -479,9 +479,9 @@ var _assert = __webpack_require__(3);
 
 var _obj = __webpack_require__(6);
 
-var _crypt = __webpack_require__(323);
+var _crypt = __webpack_require__(324);
 
-var _Sha = __webpack_require__(324);
+var _Sha = __webpack_require__(325);
 
 var _utf = __webpack_require__(93);
 
@@ -4876,9 +4876,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-__webpack_require__(315);
+__webpack_require__(316);
 
-var _firebase_app = __webpack_require__(316);
+var _firebase_app = __webpack_require__(317);
 
 // Export a single instance of firebase app
 /**
@@ -4922,7 +4922,7 @@ exports.attachDummyErrorHandler = exports.Deferred = exports.PromiseImpl = undef
 
 var _globalScope = __webpack_require__(142);
 
-var PromiseImpl = exports.PromiseImpl = _globalScope.globalScope.Promise || __webpack_require__(317);
+var PromiseImpl = exports.PromiseImpl = _globalScope.globalScope.Promise || __webpack_require__(318);
 /**
  * A deferred promise implementation.
  */
@@ -8469,9 +8469,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SessionStorage = exports.PersistentStorage = undefined;
 
-var _DOMStorageWrapper = __webpack_require__(326);
+var _DOMStorageWrapper = __webpack_require__(327);
 
-var _MemoryStorage = __webpack_require__(327);
+var _MemoryStorage = __webpack_require__(328);
 
 /**
 * Helper to create a DOMStorageWrapper or else fall back to MemoryStorage.
@@ -8941,9 +8941,9 @@ var _Path = __webpack_require__(9);
 
 var _SparseSnapshotTree = __webpack_require__(156);
 
-var _SyncTree = __webpack_require__(333);
+var _SyncTree = __webpack_require__(334);
 
-var _SnapshotHolder = __webpack_require__(344);
+var _SnapshotHolder = __webpack_require__(345);
 
 var _json = __webpack_require__(23);
 
@@ -8951,19 +8951,19 @@ var _util = __webpack_require__(4);
 
 var _obj = __webpack_require__(6);
 
-var _AuthTokenProvider = __webpack_require__(345);
+var _AuthTokenProvider = __webpack_require__(346);
 
 var _StatsManager = __webpack_require__(98);
 
-var _StatsReporter = __webpack_require__(347);
+var _StatsReporter = __webpack_require__(348);
 
 var _StatsListener = __webpack_require__(161);
 
-var _EventQueue = __webpack_require__(348);
+var _EventQueue = __webpack_require__(349);
 
 var _PersistentConnection = __webpack_require__(162);
 
-var _ReadonlyRestClient = __webpack_require__(354);
+var _ReadonlyRestClient = __webpack_require__(355);
 
 var _Database = __webpack_require__(144);
 
@@ -12296,13 +12296,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Reference = undefined;
 
-var _onDisconnect = __webpack_require__(328);
+var _onDisconnect = __webpack_require__(329);
 
-var _TransactionResult = __webpack_require__(329);
+var _TransactionResult = __webpack_require__(330);
 
 var _util = __webpack_require__(4);
 
-var _NextPushId = __webpack_require__(330);
+var _NextPushId = __webpack_require__(331);
 
 var _Query = __webpack_require__(147);
 
@@ -12310,7 +12310,7 @@ var _Repo = __webpack_require__(65);
 
 var _Path = __webpack_require__(9);
 
-var _QueryParams = __webpack_require__(356);
+var _QueryParams = __webpack_require__(357);
 
 var _validation = __webpack_require__(33);
 
@@ -13766,7 +13766,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.StatsManager = undefined;
 
-var _StatsCollection = __webpack_require__(346);
+var _StatsCollection = __webpack_require__(347);
 
 var StatsManager = function () {
     function StatsManager() {}
@@ -13832,7 +13832,7 @@ var _parser = __webpack_require__(145);
 
 var _validation = __webpack_require__(33);
 
-__webpack_require__(358);
+__webpack_require__(359);
 
 /** @const {string} */
 /**
@@ -14343,7 +14343,7 @@ exports.fromResourceString = fromResourceString;
 exports.toResourceString = toResourceString;
 exports.metadataValidator = metadataValidator;
 
-var _json = __webpack_require__(365);
+var _json = __webpack_require__(366);
 
 var json = _interopRequireWildcard(_json);
 
@@ -18678,10 +18678,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Header = function (_React$Component) {
     _inherits(Header, _React$Component);
 
-    function Header() {
+    function Header(props) {
         _classCallCheck(this, Header);
 
-        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
     }
 
     _createClass(Header, [{
@@ -19541,7 +19541,7 @@ var _validation = __webpack_require__(33);
 
 var _validation2 = __webpack_require__(32);
 
-var _EventRegistration = __webpack_require__(331);
+var _EventRegistration = __webpack_require__(332);
 
 var _promise = __webpack_require__(31);
 
@@ -21385,7 +21385,7 @@ var _obj = __webpack_require__(6);
 
 var _ViewCache = __webpack_require__(160);
 
-var _View = __webpack_require__(337);
+var _View = __webpack_require__(338);
 
 /**
 * Copyright 2017 Google Inc.
@@ -21814,11 +21814,11 @@ var _util = __webpack_require__(4);
 
 var _Path = __webpack_require__(9);
 
-var _VisibilityMonitor = __webpack_require__(349);
+var _VisibilityMonitor = __webpack_require__(350);
 
-var _OnlineMonitor = __webpack_require__(350);
+var _OnlineMonitor = __webpack_require__(351);
 
-var _jwt = __webpack_require__(351);
+var _jwt = __webpack_require__(352);
 
 var _Connection = __webpack_require__(164);
 
@@ -22696,7 +22696,7 @@ var _storage = __webpack_require__(61);
 
 var _Constants = __webpack_require__(62);
 
-var _TransportManager = __webpack_require__(352);
+var _TransportManager = __webpack_require__(353);
 
 // Abort upgrade attempt if it takes longer than 60s.
 /**
@@ -23178,7 +23178,7 @@ var _CountedSet = __webpack_require__(157);
 
 var _StatsManager = __webpack_require__(98);
 
-var _PacketReceiver = __webpack_require__(353);
+var _PacketReceiver = __webpack_require__(354);
 
 var _Constants = __webpack_require__(62);
 
@@ -24540,7 +24540,7 @@ var _type = __webpack_require__(20);
 
 var type = _interopRequireWildcard(_type);
 
-var _task = __webpack_require__(368);
+var _task = __webpack_require__(369);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -24862,7 +24862,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.FbsBlob = undefined;
 
-var _fs = __webpack_require__(366);
+var _fs = __webpack_require__(367);
 
 var fs = _interopRequireWildcard(_fs);
 
@@ -25042,7 +25042,7 @@ var _object = __webpack_require__(42);
 
 var object = _interopRequireWildcard(_object);
 
-var _requestinfo = __webpack_require__(367);
+var _requestinfo = __webpack_require__(368);
 
 var _type = __webpack_require__(20);
 
@@ -25390,7 +25390,7 @@ var _errors2 = __webpack_require__(69);
 
 var _errors3 = _interopRequireDefault(_errors2);
 
-var _tokenManager = __webpack_require__(380);
+var _tokenManager = __webpack_require__(381);
 
 var _tokenManager2 = _interopRequireDefault(_tokenManager);
 
@@ -25689,7 +25689,7 @@ module.exports = exports['default'];
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(180);
-module.exports = __webpack_require__(385);
+module.exports = __webpack_require__(386);
 
 
 /***/ }),
@@ -40339,9 +40339,7 @@ var _LeftCard2 = _interopRequireDefault(_LeftCard);
 
 var _firebase = __webpack_require__(314);
 
-var firebase = _interopRequireWildcard(_firebase);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+var _firebase2 = _interopRequireDefault(_firebase);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40350,19 +40348,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-//firebase
-var config = __webpack_require__(384);
-firebase.initializeApp(config);
-
-var db = firebase.database();
-var ref = db.ref("mpi");
-
-ref.once("value", function (snapshot) {
-    console.log(snapshot.val());
-}, function (errorObj) {
-    console.log("FAILE: " + errorObj.code);
-});
 
 var Main = function (_React$Component) {
     _inherits(Main, _React$Component);
@@ -40373,61 +40358,70 @@ var Main = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
         _this.state = {
-            focusedIndex: 0,
-            mpiData: [{
-                index: 0,
-                name: "김", image: "http://i.imgur.com/iwMqYoA.jpg",
-                missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                comment: "꼭 찾아주세요!"
-            }, {
-                index: 1,
-                name: "성", image: "http://i.imgur.com/iwMqYoA.jpg",
-                missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                comment: "꼭 찾아주세요!"
-            }, {
-                index: 2,
-                name: "최", image: "http://i.imgur.com/iwMqYoA.jpg",
-                missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                comment: "꼭 찾아주세요!"
-            }, {
-                index: 3,
-                name: "조", image: "http://i.imgur.com/iwMqYoA.jpg",
-                missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                comment: "꼭 찾아주세요!"
-            }, {
-                index: 4,
-                name: "만", image: "http://i.imgur.com/iwMqYoA.jpg",
-                missingPlace: "수원시 영통구 영통동 1018-6 303호", character: "키 180, 눈 작음",
-                comment: "꼭 찾아주세요!"
-            }]
+            focusedKey: "",
+            mpiData: []
         };
         return _this;
     }
 
     _createClass(Main, [{
+        key: "componentWillMount",
+        value: function componentWillMount() {
+            var _this2 = this;
+
+            var mpiRef = _firebase2.default.database().ref('mpi').orderByKey();
+            var check = false;
+            var tempThis = this;
+            mpiRef.on('value', function (snapshot) {
+                /* Update React state when message is added at Firebase Database */
+
+                var mpiData = Object.keys(snapshot.val()).map(function (key) {
+                    var tempObj = snapshot.val()[key];
+                    tempObj.key = key;
+                    if (!check) {
+                        tempThis.setState({ focusedKey: tempObj.key });
+                        check = true;
+                    }
+                    return tempObj;
+                });
+
+                _this2.setState({ mpiData: mpiData });
+            });
+        }
+    }, {
         key: "onCardClick",
-        value: function onCardClick(index) {
-            // console.log(index);
-            this.setState({ focusedIndex: index });
-            this.forceUpdate();
+        value: function onCardClick(key) {
+            this.setState({ focusedKey: key });
         }
     }, {
         key: "setLeftCardListData",
         value: function setLeftCardListData() {
-            var _this2 = this;
+            var _this3 = this;
 
-            // console.log(this.state.focusedIndex);
+            if (this.state.mpiData.length === 0) {
+                return _react2.default.createElement("div", null);
+            }
+
             return this.state.mpiData.map(function (man) {
                 return _react2.default.createElement(_LeftCard2.default, {
-                    onCardClick: _this2.onCardClick.bind(_this2),
-                    key: man.index,
-                    index: man.index,
-                    isActive: man.index === _this2.state.focusedIndex,
+                    onCardClick: _this3.onCardClick.bind(_this3),
+                    key: man.key,
+                    keyIndex: man.key,
+                    isActive: man.key === _this3.state.focusedKey,
+
+                    accepted: man.accepted,
+                    address: man.address,
+                    age: man.age,
+                    circumstanceOfOccurance: man.circumstanceOfOccurance,
+                    dressMarks: man.dressMarks,
+                    etc: man.etc,
+                    gender: man.gender,
                     name: man.name,
-                    image: man.image,
-                    missingPlace: man.missingPlace,
-                    character: man.character,
-                    comment: man.comment });
+                    physicalCharacteristics: man.physicalCharacteristics,
+                    timeOfMissing: man.timeOfMissing,
+                    writerKey: man.writerKey,
+                    beforeUrl: man.beforeUrl
+                });
             });
         }
     }, {
@@ -40440,35 +40434,157 @@ var Main = function (_React$Component) {
             );
         }
     }, {
+        key: "onAccept",
+        value: function onAccept(key, isThisAccept) {
+            var confirmMessage = "정말 승인하시겠습니까?";
+            if (!isThisAccept) {
+                confirmMessage = "정말 취소하시겠습니까?";
+            }
+
+            if (confirm(confirmMessage) === true) {
+                var manRef = _firebase2.default.database().ref('mpi').child(key);
+                // firebase update
+                manRef.update({ "accepted": isThisAccept });
+            }
+        }
+    }, {
         key: "renderRightContents",
         value: function renderRightContents() {
+
+            if (this.state.mpiData.length == 0) {
+                return _react2.default.createElement("div", null);
+            }
+
+            var focusMan = void 0;
+            for (var i = 0; i < this.state.mpiData.length; i++) {
+                var man = this.state.mpiData[i];
+                if (man.key === this.state.focusedKey) {
+                    focusMan = man;
+                }
+            }
+
             return _react2.default.createElement(
                 "div",
                 null,
+                focusMan.accepted ? _react2.default.createElement(
+                    "div",
+                    { style: { position: "fixed", bottom: 10 } },
+                    _react2.default.createElement(
+                        "a",
+                        { onClick: this.onAccept.bind(this, focusMan.key, false),
+                            className: "waves-effect waves-light red lighten-1 btn" },
+                        "\uCDE8\uC18C\uD558\uAE30"
+                    )
+                ) : _react2.default.createElement(
+                    "div",
+                    { style: { position: "fixed", bottom: 10 } },
+                    _react2.default.createElement(
+                        "a",
+                        { onClick: this.onAccept.bind(this, focusMan.key, true),
+                            className: "waves-effect waves-light green darken-1 btn" },
+                        "\uC2B9\uC778\uD558\uAE30"
+                    )
+                ),
                 _react2.default.createElement(
                     "div",
-                    null,
-                    this.state.mpiData[this.state.focusedIndex].name
+                    { className: "rightContentsTitle" },
+                    "\uB4F1\uB85D \uC0AC\uC9C4"
+                ),
+                _react2.default.createElement("img", { src: focusMan.beforeUrl, style: {
+                        width: "auto", height: "auto",
+                        maxWidth: 160,
+                        maxHeight: 160
+                    } }),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rightContentsTitle" },
+                    "\uC774\uB984"
                 ),
                 _react2.default.createElement(
                     "div",
                     null,
-                    this.state.mpiData[this.state.focusedIndex].image
+                    focusMan.name
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rightContentsTitle" },
+                    "\uC2E4\uC885 \uC7A5\uC18C"
                 ),
                 _react2.default.createElement(
                     "div",
                     null,
-                    this.state.mpiData[this.state.focusedIndex].missingPlace
+                    focusMan.address
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rightContentsTitle" },
+                    "\uB098\uC774"
                 ),
                 _react2.default.createElement(
                     "div",
                     null,
-                    this.state.mpiData[this.state.focusedIndex].character
+                    focusMan.age,
+                    " \uC138"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rightContentsTitle" },
+                    "\uBC1C\uC0DD \uC0C1\uD669"
                 ),
                 _react2.default.createElement(
                     "div",
                     null,
-                    this.state.mpiData[this.state.focusedIndex].comment
+                    focusMan.circumstanceOfOccurance
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rightContentsTitle" },
+                    "\uAE30\uD0C0 \uC0AC\uD56D"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    focusMan.etc
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rightContentsTitle" },
+                    "\uC131\uBCC4"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    focusMan.gender
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rightContentsTitle" },
+                    "\uC2E0\uCCB4 \uD2B9\uC9D5"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    focusMan.physicalCharacteristics
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rightContentsTitle" },
+                    "\uC2E4\uC885\uC2DC\uAC01"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    focusMan.timeOfMissing
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "rightContentsTitle" },
+                    "\uC791\uC131\uC790"
+                ),
+                _react2.default.createElement(
+                    "div",
+                    null,
+                    focusMan.writerKey
                 )
             );
         }
@@ -40541,7 +40657,7 @@ var LeftCard = function (_React$Component) {
     _createClass(LeftCard, [{
         key: "onClick",
         value: function onClick() {
-            this.props.onCardClick(this.props.index);
+            this.props.onCardClick(this.props.keyIndex);
         }
     }, {
         key: "render",
@@ -40551,6 +40667,14 @@ var LeftCard = function (_React$Component) {
             if (this.props.isActive === true) {
                 cardClassName = "collection-item grey-text text-darken-3 green lighten-4 active";
             }
+
+            var acceptText = "미승인";
+            var acceptColor = "#d61b1b";
+            if (this.props.accepted) {
+                acceptText = "승인됨";
+                acceptColor = "#4286f4";
+            }
+
             return _react2.default.createElement(
                 "div",
                 null,
@@ -40563,28 +40687,47 @@ var LeftCard = function (_React$Component) {
                             onClick: this.onClick.bind(this) },
                         _react2.default.createElement(
                             "div",
-                            null,
-                            this.props.name
+                            { className: "leftCardContents" },
+                            _react2.default.createElement("img", { className: "leftCardImage", src: this.props.beforeUrl })
                         ),
                         _react2.default.createElement(
                             "div",
-                            null,
-                            this.props.image
+                            { className: "leftCardContents", id: "leftCardText" },
+                            _react2.default.createElement(
+                                "div",
+                                { style: { fontSize: 20, marginBottom: 10 } },
+                                this.props.name,
+                                " (",
+                                _react2.default.createElement(
+                                    "span",
+                                    null,
+                                    this.props.age,
+                                    "\uC138"
+                                ),
+                                ", ",
+                                _react2.default.createElement(
+                                    "span",
+                                    null,
+                                    this.props.gender
+                                ),
+                                ")"
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { style: { color: "#515151", marginBottom: -4 } },
+                                this.props.address
+                            ),
+                            _react2.default.createElement(
+                                "div",
+                                { style: { color: "#717171", fontSize: 10 } },
+                                this.props.writerKey,
+                                "\uB2D8\uC774 \uB4F1\uB85D"
+                            )
                         ),
                         _react2.default.createElement(
                             "div",
-                            null,
-                            this.props.missingPlace
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            null,
-                            this.props.character
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            null,
-                            this.props.comment
+                            { style: { color: acceptColor, textAlign: 'right', fontWeight: 'bold' } },
+                            acceptText
                         )
                     )
                 )
@@ -40602,6 +40745,29 @@ exports.default = LeftCard;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _firebase = __webpack_require__(315);
+
+var firebase = _interopRequireWildcard(_firebase);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+//firebase
+var config = __webpack_require__(385);
+var fb = firebase.initializeApp(config);
+
+exports.default = fb;
+
+/***/ }),
+/* 315 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /*! @license Firebase v4.2.0
 Build: rev-d6b2db4
 Terms: https://firebase.google.com/terms/ */
@@ -40616,13 +40782,13 @@ var _app = __webpack_require__(30);
 
 var _app2 = _interopRequireDefault(_app);
 
-__webpack_require__(321);
-
 __webpack_require__(322);
 
-__webpack_require__(362);
+__webpack_require__(323);
 
-__webpack_require__(378);
+__webpack_require__(363);
+
+__webpack_require__(379);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40648,7 +40814,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 315 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40744,7 +40910,7 @@ if (!Array.prototype.find) {
 
 
 /***/ }),
-/* 316 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41129,7 +41295,7 @@ var appErrors = new _errors.ErrorFactory('app', 'Firebase', errors);
 
 
 /***/ }),
-/* 317 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(setImmediate) {(function (root) {
@@ -41366,10 +41532,10 @@ var appErrors = new _errors.ErrorFactory('app', 'Firebase', errors);
 
 })(this);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(319).setImmediate))
 
 /***/ }),
-/* 318 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -41422,14 +41588,14 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(319);
-var global = __webpack_require__(320);
+__webpack_require__(320);
+var global = __webpack_require__(321);
 exports.setImmediate = global.setImmediate;
 exports.clearImmediate = global.clearImmediate;
 
 
 /***/ }),
-/* 319 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -41622,7 +41788,7 @@ exports.clearImmediate = global.clearImmediate;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59), __webpack_require__(0)))
 
 /***/ }),
-/* 320 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var win;
@@ -41642,7 +41808,7 @@ module.exports = win;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
 
 /***/ }),
-/* 321 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/*! @license Firebase v4.2.0
@@ -41943,7 +42109,7 @@ c){a=new T(a);c({INTERNAL:{getUid:r(a.getUid,a),getToken:r(a.xf,a),addAuthTokenL
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(59)))
 
 /***/ }),
-/* 322 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41995,11 +42161,11 @@ var _util = __webpack_require__(4);
 
 var _RepoManager = __webpack_require__(99);
 
-var _internal = __webpack_require__(360);
+var _internal = __webpack_require__(361);
 
 var INTERNAL = _interopRequireWildcard(_internal);
 
-var _test_access = __webpack_require__(361);
+var _test_access = __webpack_require__(362);
 
 var TEST_ACCESS = _interopRequireWildcard(_test_access);
 
@@ -42048,7 +42214,7 @@ registerDatabase(_app2.default);
 
 
 /***/ }),
-/* 323 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42314,7 +42480,7 @@ var base64 = exports.base64 = {
 
 
 /***/ }),
-/* 324 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42329,7 +42495,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Sha1 = undefined;
 
-var _hash = __webpack_require__(325);
+var _hash = __webpack_require__(326);
 
 /**
 * Copyright 2017 Google Inc.
@@ -42602,7 +42768,7 @@ exports.Sha1 = Sha1;
 
 
 /***/ }),
-/* 325 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42670,7 +42836,7 @@ exports.Hash = Hash;
 
 
 /***/ }),
-/* 326 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42766,7 +42932,7 @@ exports.DOMStorageWrapper = DOMStorageWrapper;
 
 
 /***/ }),
-/* 327 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42831,7 +42997,7 @@ exports.MemoryStorage = MemoryStorage;
 
 
 /***/ }),
-/* 328 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42963,7 +43129,7 @@ exports.OnDisconnect = OnDisconnect;
 
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43019,7 +43185,7 @@ exports.TransactionResult = TransactionResult;
 
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43111,7 +43277,7 @@ var nextPushId = exports.nextPushId = function () {
 
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43128,7 +43294,7 @@ exports.ChildEventRegistration = exports.ValueEventRegistration = undefined;
 
 var _DataSnapshot = __webpack_require__(154);
 
-var _Event = __webpack_require__(332);
+var _Event = __webpack_require__(333);
 
 var _obj = __webpack_require__(6);
 
@@ -43336,7 +43502,7 @@ exports.ChildEventRegistration = ChildEventRegistration;
 
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43459,7 +43625,7 @@ exports.CancelEvent = CancelEvent;
 
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43478,7 +43644,7 @@ var _assert = __webpack_require__(3);
 
 var _util = __webpack_require__(4);
 
-var _AckUserWrite = __webpack_require__(334);
+var _AckUserWrite = __webpack_require__(335);
 
 var _ChildrenNode = __webpack_require__(14);
 
@@ -43486,9 +43652,9 @@ var _obj = __webpack_require__(6);
 
 var _ImmutableTree = __webpack_require__(96);
 
-var _ListenComplete = __webpack_require__(335);
+var _ListenComplete = __webpack_require__(336);
 
-var _Merge = __webpack_require__(336);
+var _Merge = __webpack_require__(337);
 
 var _Operation = __webpack_require__(34);
 
@@ -43498,7 +43664,7 @@ var _Path = __webpack_require__(9);
 
 var _SyncPoint = __webpack_require__(159);
 
-var _WriteTree = __webpack_require__(342);
+var _WriteTree = __webpack_require__(343);
 
 /**
  * SyncTree is the central class for managing event callback registration, data caching, views
@@ -44173,7 +44339,7 @@ exports.SyncTree = SyncTree;
 
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44250,7 +44416,7 @@ exports.AckUserWrite = AckUserWrite;
 
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44311,7 +44477,7 @@ exports.ListenComplete = ListenComplete;
 
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44401,7 +44567,7 @@ exports.Merge = Merge;
 
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44418,7 +44584,7 @@ exports.View = undefined;
 
 var _IndexedFilter = __webpack_require__(97);
 
-var _ViewProcessor = __webpack_require__(338);
+var _ViewProcessor = __webpack_require__(339);
 
 var _ChildrenNode = __webpack_require__(14);
 
@@ -44426,7 +44592,7 @@ var _CacheNode = __webpack_require__(66);
 
 var _ViewCache = __webpack_require__(160);
 
-var _EventGenerator = __webpack_require__(341);
+var _EventGenerator = __webpack_require__(342);
 
 var _assert = __webpack_require__(3);
 
@@ -44627,7 +44793,7 @@ exports.View = View;
 
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44646,7 +44812,7 @@ var _Operation = __webpack_require__(34);
 
 var _assert = __webpack_require__(3);
 
-var _ChildChangeAccumulator = __webpack_require__(339);
+var _ChildChangeAccumulator = __webpack_require__(340);
 
 var _Change = __webpack_require__(41);
 
@@ -44658,7 +44824,7 @@ var _ImmutableTree = __webpack_require__(96);
 
 var _Path = __webpack_require__(9);
 
-var _CompleteChildSource = __webpack_require__(340);
+var _CompleteChildSource = __webpack_require__(341);
 
 /**
  * @constructor
@@ -45163,7 +45329,7 @@ exports.ViewProcessor = ViewProcessor;
 
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45246,7 +45412,7 @@ exports.ChildChangeAccumulator = ChildChangeAccumulator;
 
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45360,7 +45526,7 @@ exports.WriteTreeCompleteChildSource = WriteTreeCompleteChildSource;
 
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45507,7 +45673,7 @@ exports.EventGenerator = EventGenerator;
 
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45528,7 +45694,7 @@ var _assert = __webpack_require__(3);
 
 var _Path = __webpack_require__(9);
 
-var _CompoundWrite = __webpack_require__(343);
+var _CompoundWrite = __webpack_require__(344);
 
 var _PriorityIndex = __webpack_require__(12);
 
@@ -46123,7 +46289,7 @@ exports.WriteTreeRef = WriteTreeRef;
 
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46350,7 +46516,7 @@ exports.CompoundWrite = CompoundWrite;
 
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46403,7 +46569,7 @@ exports.SnapshotHolder = SnapshotHolder;
 
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46488,7 +46654,7 @@ exports.AuthTokenProvider = AuthTokenProvider;
 
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46548,7 +46714,7 @@ exports.StatsCollection = StatsCollection;
 
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46633,7 +46799,7 @@ exports.StatsReporter = StatsReporter;
 
 
 /***/ }),
-/* 348 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46820,7 +46986,7 @@ exports.EventList = EventList;
 
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46930,7 +47096,7 @@ exports.VisibilityMonitor = VisibilityMonitor;
 
 
 /***/ }),
-/* 350 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47041,7 +47207,7 @@ exports.OnlineMonitor = OnlineMonitor;
 
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47189,7 +47355,7 @@ var isAdmin = exports.isAdmin = function isAdmin(token) {
 
 
 /***/ }),
-/* 352 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47301,7 +47467,7 @@ exports.TransportManager = TransportManager;
 
 
 /***/ }),
-/* 353 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47401,7 +47567,7 @@ exports.PacketReceiver = PacketReceiver;
 
 
 /***/ }),
-/* 354 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47424,7 +47590,7 @@ var _json = __webpack_require__(23);
 
 var _obj = __webpack_require__(6);
 
-var _util2 = __webpack_require__(355);
+var _util2 = __webpack_require__(356);
 
 var _ServerActions = __webpack_require__(167);
 
@@ -47602,7 +47768,7 @@ exports.ReadonlyRestClient = ReadonlyRestClient;
 
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47676,7 +47842,7 @@ var querystringDecode = exports.querystringDecode = function querystringDecode(q
 
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47705,7 +47871,7 @@ var _PathIndex = __webpack_require__(153);
 
 var _IndexedFilter = __webpack_require__(97);
 
-var _LimitedFilter = __webpack_require__(357);
+var _LimitedFilter = __webpack_require__(358);
 
 var _RangedFilter = __webpack_require__(168);
 
@@ -48095,7 +48261,7 @@ exports.QueryParams = QueryParams;
 
 
 /***/ }),
-/* 357 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48349,7 +48515,7 @@ exports.LimitedFilter = LimitedFilter;
 
 
 /***/ }),
-/* 358 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48389,7 +48555,7 @@ var _DataSnapshot = __webpack_require__(154);
 
 var _Path = __webpack_require__(9);
 
-var _Tree = __webpack_require__(359);
+var _Tree = __webpack_require__(360);
 
 var _PriorityIndex = __webpack_require__(12);
 
@@ -48926,7 +49092,7 @@ _Repo.Repo.prototype.abortTransactionsOnNode_ = function (node) {
 
 
 /***/ }),
-/* 359 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49169,7 +49335,7 @@ exports.Tree = Tree;
 
 
 /***/ }),
-/* 360 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49240,7 +49406,7 @@ var interceptServerData = exports.interceptServerData = function interceptServer
 
 
 /***/ }),
-/* 361 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49341,7 +49507,7 @@ var forceRestClient = exports.forceRestClient = function forceRestClient(_forceR
 
 
 /***/ }),
-/* 362 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49360,11 +49526,11 @@ var _string = __webpack_require__(100);
 
 var _taskenums = __webpack_require__(169);
 
-var _xhriopool = __webpack_require__(363);
+var _xhriopool = __webpack_require__(364);
 
 var _reference = __webpack_require__(171);
 
-var _service = __webpack_require__(372);
+var _service = __webpack_require__(373);
 
 var _app = __webpack_require__(30);
 
@@ -49412,7 +49578,7 @@ registerStorage(_app2.default);
 
 
 /***/ }),
-/* 363 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49427,7 +49593,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.XhrIoPool = undefined;
 
-var _xhrio_network = __webpack_require__(364);
+var _xhrio_network = __webpack_require__(365);
 
 /**
  * Factory-like class for creating XhrIo instances.
@@ -49458,7 +49624,7 @@ exports.XhrIoPool = XhrIoPool;
 
 
 /***/ }),
-/* 364 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49623,7 +49789,7 @@ exports.NetworkXhrIo = NetworkXhrIo;
 
 
 /***/ }),
-/* 365 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49679,7 +49845,7 @@ function jsonObjectOrNull(s) {
 
 
 /***/ }),
-/* 366 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49759,7 +49925,7 @@ function sliceBlob(blob, start, end) {
 
 
 /***/ }),
-/* 367 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49805,7 +49971,7 @@ exports.RequestInfo = RequestInfo;
 
 
 /***/ }),
-/* 368 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49824,9 +49990,9 @@ var _taskenums = __webpack_require__(169);
 
 var fbsTaskEnums = _interopRequireWildcard(_taskenums);
 
-var _observer = __webpack_require__(369);
+var _observer = __webpack_require__(370);
 
-var _tasksnapshot = __webpack_require__(370);
+var _tasksnapshot = __webpack_require__(371);
 
 var _args = __webpack_require__(101);
 
@@ -49836,7 +50002,7 @@ var _array = __webpack_require__(104);
 
 var fbsArray = _interopRequireWildcard(_array);
 
-var _async = __webpack_require__(371);
+var _async = __webpack_require__(372);
 
 var _error = __webpack_require__(25);
 
@@ -50387,7 +50553,7 @@ exports.UploadTask = UploadTask;
 
 
 /***/ }),
-/* 369 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50446,7 +50612,7 @@ exports.Observer = Observer;
 
 
 /***/ }),
-/* 370 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50491,7 +50657,7 @@ exports.UploadTaskSnapshot = UploadTaskSnapshot;
 
 
 /***/ }),
-/* 371 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50549,7 +50715,7 @@ function async(f) {
 
 
 /***/ }),
-/* 372 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50568,7 +50734,7 @@ var _args = __webpack_require__(101);
 
 var args = _interopRequireWildcard(_args);
 
-var _authwrapper = __webpack_require__(373);
+var _authwrapper = __webpack_require__(374);
 
 var _location = __webpack_require__(68);
 
@@ -50576,7 +50742,7 @@ var _promise_external = __webpack_require__(35);
 
 var fbsPromiseImpl = _interopRequireWildcard(_promise_external);
 
-var _request = __webpack_require__(376);
+var _request = __webpack_require__(377);
 
 var RequestExports = _interopRequireWildcard(_request);
 
@@ -50724,7 +50890,7 @@ exports.ServiceInternals = ServiceInternals;
 
 
 /***/ }),
-/* 373 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50747,7 +50913,7 @@ var _error2 = __webpack_require__(25);
 
 var errorsExports = _interopRequireWildcard(_error2);
 
-var _failrequest = __webpack_require__(374);
+var _failrequest = __webpack_require__(375);
 
 var _location = __webpack_require__(68);
 
@@ -50755,7 +50921,7 @@ var _promise_external = __webpack_require__(35);
 
 var promiseimpl = _interopRequireWildcard(_promise_external);
 
-var _requestmap = __webpack_require__(375);
+var _requestmap = __webpack_require__(376);
 
 var _type = __webpack_require__(20);
 
@@ -50873,7 +51039,7 @@ exports.AuthWrapper = AuthWrapper;
 
 
 /***/ }),
-/* 374 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50920,7 +51086,7 @@ exports.FailRequest = FailRequest;
 
 
 /***/ }),
-/* 375 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51001,7 +51167,7 @@ exports.RequestMap = RequestMap;
 
 
 /***/ }),
-/* 376 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51023,7 +51189,7 @@ var _array = __webpack_require__(104);
 
 var array = _interopRequireWildcard(_array);
 
-var _backoff = __webpack_require__(377);
+var _backoff = __webpack_require__(378);
 
 var backoff = _interopRequireWildcard(_backoff);
 
@@ -51254,7 +51420,7 @@ function makeRequest(requestInfo, authToken, pool) {
 
 
 /***/ }),
-/* 377 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51386,7 +51552,7 @@ function stop(id) {
 
 
 /***/ }),
-/* 378 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51416,11 +51582,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.registerMessaging = registerMessaging;
 
-var _windowController = __webpack_require__(379);
+var _windowController = __webpack_require__(380);
 
 var _windowController2 = _interopRequireDefault(_windowController);
 
-var _swController = __webpack_require__(383);
+var _swController = __webpack_require__(384);
 
 var _swController2 = _interopRequireDefault(_swController);
 
@@ -51450,7 +51616,7 @@ registerMessaging(_app2.default);
 
 
 /***/ }),
-/* 379 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51491,7 +51657,7 @@ var _workerPageMessage = __webpack_require__(178);
 
 var _workerPageMessage2 = _interopRequireDefault(_workerPageMessage);
 
-var _defaultSw = __webpack_require__(382);
+var _defaultSw = __webpack_require__(383);
 
 var _defaultSw2 = _interopRequireDefault(_defaultSw);
 
@@ -51814,7 +51980,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 380 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51849,7 +52015,7 @@ var _errors2 = __webpack_require__(69);
 
 var _errors3 = _interopRequireDefault(_errors2);
 
-var _arrayBufferToBase = __webpack_require__(381);
+var _arrayBufferToBase = __webpack_require__(382);
 
 var _arrayBufferToBase2 = _interopRequireDefault(_arrayBufferToBase);
 
@@ -52191,7 +52357,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 381 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52235,7 +52401,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 382 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52272,7 +52438,7 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52613,19 +52779,19 @@ module.exports = exports['default'];
 
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, exports) {
 
 module.exports = {"apiKey":"AIzaSyBZyVkasQ2K10TRVUfOV1WFX49CkBAkcUU","authDomain":"seeyouagain-f0804.firebaseapp.com","databaseURL":"https://seeyouagain-f0804.firebaseio.com","projectId":"seeyouagain-f0804","storageBucket":"seeyouagain-f0804.appspot.com","messagingSenderId":"1000304417773"}
 
 /***/ }),
-/* 385 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(386);
+var content = __webpack_require__(387);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -52633,7 +52799,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(388)(content, options);
+var update = __webpack_require__(389)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -52650,21 +52816,21 @@ if(false) {
 }
 
 /***/ }),
-/* 386 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(387)(undefined);
+exports = module.exports = __webpack_require__(388)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "body {\n    background-color: #f2f2f2;\n}\n\n.leftCardList {\n    width: 30%;\n    position: absolute;\n    top: 57px;\n    bottom: 0;\n    z-index: -1;\n    overflow: scroll;\n    border-right: 1px solid #d2d2d2;\n}\n\n.rightContents {\n    position: absolute;\n    left: 30%;\n    top: 60px;\n    overflow: scroll;\n    margin: 10px;\n}\n\n@media (max-width:600px) {\n    .leftCardList {\n        top: 49px;\n    }\n    .rightContents{\n        top: 52px;\n    }\n}", ""]);
+exports.push([module.i, "body {\n    background-color: #f2f2f2;\n}\n\n\n.leftCardList {\n    width: 350px;\n    position: absolute;\n    top: 57px;\n    bottom: 0;\n    z-index: -1;\n    overflow: scroll;\n    border-right: 1px solid #d2d2d2;\n}\n\n.leftCardImage {\n    width: auto; height: auto;\n    max-width: 80px;\n    max-height: 80px;\n    border-radius: 40px;\n    margin-right: 10px;\n}\n\n.leftCardContents{\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.rightContents {\n    z-index : -1;\n    position: absolute;\n    left: 360px;\n    top: 0;\n    right: 30px;\n    height: calc(100% - 120px);\n    overflow: scroll;\n    padding-top: 60px;\n    margin: 10px 10px 10px 10px;\n}\n\n.rightContentsTitle{\n    font-size: 11px;\n    color: slategray;\n    margin-top: 20px;\n    margin-bottom: 10px;\n}\n\n\n.cardContentsBox{\n    display: inline-block;\n}\n\n@media (max-width: 900px){\n    .leftCardList {\n        width: 120px;\n    }\n    #leftCardText {\n        display: none;\n    }\n    .rightContents {\n        left : 150px;\n    }\n}\n\n@media (max-width:600px) {\n    .leftCardList {\n        top: 49px;\n\n    }\n    .rightContents{\n        top: 52px;\n    }\n\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 387 */
+/* 388 */
 /***/ (function(module, exports) {
 
 /*
@@ -52746,7 +52912,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 388 */
+/* 389 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -52792,7 +52958,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(389);
+var	fixUrls = __webpack_require__(390);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -53105,7 +53271,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 389 */
+/* 390 */
 /***/ (function(module, exports) {
 
 
